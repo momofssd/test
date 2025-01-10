@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333; /* Consistent text color */
+  line-height: 1.5;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #46505c; /* Default button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+button:hover {
+  background-color: rgb(27, 34, 34); /* Darker hover effect */
+}
+
+/* Form Section Styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-section_upload {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select, input, button {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.uploadDataButton {
+  width: auto; /* Allow button to auto-size */
+}
+
+/* Status Display */
+.output-section_status {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Metrics and Reports */
+.output-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.metrics-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if items exceed container width */
+  gap: 10px; /* Add spacing between items */
+  justify-content: flex-start; /* Align items to the left */
+  margin-top: 10px;
+}
+
+.metric-item {
+  padding: 5px 10px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Optional border for clarity */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Background color */
+  font-size: 0.9em; /* Adjust font size if needed */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Report Content */
+.report-container h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.report-content {
+  white-space: pre-wrap; /* Preserve whitespace and wrapping */
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Dropped Columns */
+#droppedColumnsContainer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 8px; /* Add spacing between each checkbox */
+  max-height: 200px; /* Limit height for scrollable area */
+  overflow-y: auto; /* Add scroll bar for overflowing content */
+  border: 1px solid #ccc; /* Optional border for clarity */
+  padding: 10px; /* Add spacing inside */
+  background-color: #fff; /* Background color for contrast */
+}
+
+.dropped-column-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.dropped-column-item input[type="checkbox"] {
+  margin: 0; 
+  width: 16px; 
+  height: 16px; 
+  vertical-align: middle; 
+}
+
+.dropped-column-item label {
+  margin: 0; 
+  line-height: 16px;
+}
+
+.dropped-column-item label.disabled {
+  color: gray; /* Visually indicate disabled state */
+  cursor: not-allowed;
+}
+
+/* Charts */
+.chart-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-container img {
+  max-width: 100%; /* Scale chart to fit container */
+  width: 500px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px auto;
+}
+
+.chart-container p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
